@@ -1,56 +1,59 @@
-⚖️ AdvocateHub
-AdvocateHub is a full-stack lawyer management and legal services platform that connects users with advocates. The platform allows lawyers to create and manage their profiles, while users can browse advocate information and access legal services. Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
+# ⚖️ AdvocateHub
 
-🚀 Features
+AdvocateHub is a full-stack lawyer management and legal services platform that connects users with advocates. The platform allows lawyers to create and manage their profiles, while users can browse advocate information and access legal services.
 
-•	🔐 User Authentication and Authorization
+Built using **Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript**.
 
-•	👨‍⚖️ Lawyer Registration and Profile Management
+---
 
-•	📂 File Upload Functionality
+## 🚀 Features
 
-•	🔍 Search and Browse Advocates
+- 🔐 User Authentication and Authorization
+- 👨‍⚖️ Lawyer Registration and Profile Management
+- 📂 File Upload Functionality
+- 🔍 Search and Browse Advocates
+- 📧 Email Notifications
+- 🗄️ MongoDB Database Integration
+- 🌐 Responsive User Interface
+- 🔒 Secure Password Hashing using Bcrypt
+- ⚡ RESTful APIs with Express.js
 
-•	📧 Email Notifications
+---
 
-•	🗄️ MongoDB Database Integration
+## 🛠️ Tech Stack
 
-•	🌐 Responsive User Interface
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
 
-•	🔒 Secure Password Hashing using Bcrypt
+### Backend
+- Node.js
+- Express.js
 
-•	⚡ RESTful APIs with Express.js
+### Database
+- MongoDB
+- Mongoose
 
-🛠️ Tech Stack
+### Other Packages
+- bcryptjs
+- multer
+- cors
+- dotenv
+- nodemailer
 
-Frontend
-
-•	HTML5
-
-•	CSS3
-
-•	JavaScript
-
-Backend
-
-•	Node.js
-•	Express.js
-
-Database
-•	MongoDB
-•	Mongoose
-
-Other Packages
-•	bcryptjs
-•	multer
-•	cors
-•	dotenv
-•	nodemailer
+---
 
 ## 📁 Project Structure
 
 ```text
 AdvocateHub/
+│
+├── All_logos/
+│   └── Images and project assets
+│
+├── uploads/
+│   └── Uploaded advocate documents and profile photos
 │
 ├── Models/
 │   ├── Advocate.js
@@ -59,37 +62,149 @@ AdvocateHub/
 │
 ├── Routes/
 │   ├── advocateRoutes.js
-│   ├── authRoutes.js
-│   └── clientRoutes.js
-│
-├── Controllers/
-│   ├── advocateController.js
-│   ├── authController.js
-│   └── clientController.js
+│   ├── clientRoutes.js
+│   └── authRoutes.js
 │
 ├── Middleware/
-│   └── authMiddleware.js
+│   └── Authentication and authorization middleware
 │
-├── uploads/
-│   └── profile-images/
+├── client.html
+├── advocate.html
+├── login.html
+├── signup.html
+├── index.html
 │
-├── public/
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── client.css
+├── advocate.css
+├── login.css
+├── style.css
 │
-├── .env
+├── client.js
+├── advocate.js
+├── login.js
+├── script.js
+│
+├── server.js
 ├── package.json
 ├── package-lock.json
-├── server.js
+├── .env
 └── README.md
 ```
-📂 GitHub Repository
-https://github.com/anoopyadav-01/AdvocateHub.git
 
-🤝 Contributing
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/AdvocateHub.git
+cd AdvocateHub
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+EMAIL_USER=your_email_address
+EMAIL_PASS=your_email_password
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## ▶️ Run the Application
+
+Start the server using:
+
+```bash
+npm start
+```
+
+or
+
+```bash
+node server.js
+```
+
+The application will run on:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## 📸 Key Modules
+
+### 👨‍⚖️ Advocate Module
+- Advocate Registration
+- Profile Management
+- Document Upload
+- Experience & Practice Area Management
+
+### 👤 Client Module
+- User Registration & Login
+- Browse Advocates
+- Search & Filter Lawyers
+- Contact Lawyers
+
+### 📧 Notification Module
+- Email Notifications
+- Account Updates
+- Inquiry Notifications
+
+### 🔒 Security Module
+- Password Hashing using Bcrypt
+- Authentication & Authorization
+- Secure API Endpoints
+
+---
+
+## 🌟 Future Enhancements
+
+- Video Consultation
+- Lawyer Rating & Review System
+- Legal Blog & Articles
+- Payment Gateway Integration
+- AI-Based Lawyer Recommendation System
+
+---
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome.
 
-Author
-Anoop Yadav
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📂 GitHub Repository
+
+https://github.com/YOUR_USERNAME/AdvocateHub
+
+---
+
+## 👨‍💻 Author
+
+**Anoop Yadav**
+
+B.Sc. Computer Science Student  
+Full Stack Web Developer
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
