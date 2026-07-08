@@ -32,6 +32,7 @@ Frontend
 •	JavaScript
 
 Backend
+
 •	Node.js
 •	Express.js
 
@@ -85,7 +86,10 @@ AdvocateHub/
 ```
 📂 GitHub Repository
 https://github.com/anoopyadav-01/AdvocateHub.git
+
 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome.
+
 Author
 Anoop Yadav
