@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Panel</title>
+    <link rel="stylesheet" href="client.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="./All_logos/advocate.png" alt="Logo" />
+      <img
+        id="clientphoto-display"
+        class="profile-photo"
+        src=""
+        alt="Profile"
+        style="display: none"
+      />
+    </div>
+
+    <div class="clientinfo" id="client-info">
+      <div>
+        <span>NAME: </span>
+        <span id="clientname-display"></span>
+        <input type="text" id="clientname-input" style="display: none" />
+      </div>
+      <div>
+        <span>Email: </span>
+        <span id="clientemail-display"></span>
+        <input type="email" id="clientemail-input" style="display: none" />
+      </div>
+      <div>
+        <span>Phone: </span>
+        <span id="clientphone-display"></span>
+        <input type="text" id="clientphone-input" style="display: none" />
+      </div>
+      <button class="updatebtn" onclick="enableEdit()">Update</button>
+      <button
+        class="updatebtn"
+        id="save-btn"
+        onclick="saveProfile()"
+        style="display: none"
+      >
+        Save
+      </button>
+      <button class="updatebtn" id="logoutBtn">Logout</button>
+    </div>
+    <div class="main">
+      <div class="filter-panel">
+        <h3>Filters</h3>
+        <select name="select state" id="select-state">
+          <option value="" disabled selected>select state</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Utter Pradesh">Utter Pradesh</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+        </select>
+        <select name="select city" id="select-city">
+          <option value="" disabled selected>select city</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Jaunpur">Jaunpur</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="Jwalapur">Jwalapur</option>
+        </select>
+        <select name="select experience" id="select-experience">
+          <option value="" disabled selected>select experience</option>
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+
+        <select name="practice-pratice" id="practice-area">
+          <option value="" disabled selected>Select area of pratice</option>
+          <option value="crime">Cheque Bounce</option>
+          <option value="Divorce">Anti Corruption</option>
+          <option value="Child Custody">Divorse</option>
+          <option value="Property">Property</option>
+        </select>
+        <select name="select language" id="select-language">
+          <option value="" disabled selected>select language</option>
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="french">French</option>
+          <option value="marathi">Marathi</option>
+        </select>
+        <button class="apply-btn">Apply</button>
+        <button class="reset-btn">Reset</button>
+      </div>
+      <div class="lawyerss">
+        <h1 class="lawclinet">Connect to Our Lawyers</h1>
+        <div id="lawyersContainer" class="advocates-container">
+          <!-- Advocate cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form Modal -->
+    <div id="contactFormModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Contact Lawyer</h2>
+
+        <form id="contactForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="phone">Your Phone:</label>
+          <input type="tel" id="phone" required />
+
+          <label for="reason">Reason for Contact:</label>
+          <textarea id="reason" required></textarea>
+
+          <button class="btn" type="submit" onclick="closeModal()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="feedbackFormModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close" onclick="closeFeedbackModal()">&times;</span>
+        <h2>Give Feedback</h2>
+        <form id="feedbackForm">
+          <label for="feedback">Your Feedback:</label>
+          <textarea id="feedback" required></textarea>
+          <input type="hidden" id="clientFeedbackEnrollmentId" />
+
+          <input type="hidden" id="clientFeedbackName" />
+          <input type="hidden" id="clientFeedbackPhoto" />
+
+          <button class="btn" type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+    <div>
+      <section class="bottom">
+        <footer class="footer">
+          <div class="footer-column">
+            <h3>Areas of Law</h3>
+            <ul>
+              <li><a href="#">Divorce</a></li>
+              <li><a href="#">Family Dispute</a></li>
+              <li><a href="#">Child Custody</a></li>
+              <li><a href="#">Criminal</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Cyber Crime</a></li>
+              <li><a href="#">Trademark & Copyright</a></li>
+              <li><a href="#">Startup</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Cities</h3>
+            <ul>
+              <li><a href="#">Mumbai Lawyers</a></li>
+              <li><a href="#">Delhi Lawyers</a></li>
+              <li><a href="#">Bangalore Lawyers</a></li>
+              <li><a href="#">Chennai Lawyers</a></li>
+              <li><a href="#">Pune Lawyers</a></li>
+              <li><a href="#">Ahmedabad Lawyers</a></li>
+              <li><a href="#">Kolkata Lawyers</a></li>
+              <li><a href="#">Indore Lawyers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Courts</h3>
+            <ul>
+              <li><a href="#">Delhi High Court</a></li>
+              <li><a href="#">Bombay High Court</a></li>
+              <li><a href="#">Allahabad High Court</a></li>
+              <li><a href="#">Calcutta High Court</a></li>
+              <li><a href="#">Karnataka High Court</a></li>
+              <li><a href="#">Gujarat High Court</a></li>
+              <li><a href="#">Hyderabad High Court</a></li>
+              <li><a href="#">Madhya Pradesh High Court</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <img src="./All_logos/advocate.png" alt="" />
+          </div>
+        </footer>
+
+        <div class="footer-bottom">
+          <h4 class="footerpara">
+            The information provided on AdvocateHub.com is provided AS IS,
+            subject to Terms Of Use & Privacy Policy. It is solely available at
+            your request for informational purposes only, should not be
+            interpreted as soliciting or advertisement. In cases where the user
+            has any legal issues, he/she in all cases must seek independent
+            legal advice. Advocate ratings displayed on ILegalAdvice.com are
+            based on user feedback. They are not recommendations to engage or
+            consult any lawyer. LawyersNest does not guarantee accuracy,
+            adequacy or completeness of any information and is not responsible
+            for any errors or omissions, or for results obtained from the use of
+            such information.
+          </h4>
+          <h5 class="footerpara">
+            &copy; 2024 AdvocateHub.com, Inc. All rights reserved
+          </h5>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="client.js"></script>
+</html>
