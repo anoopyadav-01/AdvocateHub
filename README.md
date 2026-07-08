@@ -98,7 +98,7 @@ AdvocateHub/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AdvocateHub.git
+git clone https://github.com/anoopyadav-01/AdvocateHub.git
 cd AdvocateHub
 ```
 
@@ -153,6 +153,7 @@ http://localhost:5000
 - Profile Management
 - Document Upload
 - Experience & Practice Area Management
+-connect to client'
 
 ### 👤 Client Module
 - User Registration & Login
@@ -192,7 +193,7 @@ Feel free to fork the repository and submit a pull request.
 
 ## 📂 GitHub Repository
 
-https://github.com/YOUR_USERNAME/AdvocateHub
+https://github.com/anoopyadav-01/AdvocateHub.git
 
 ---
 
@@ -200,11 +201,8 @@ https://github.com/YOUR_USERNAME/AdvocateHub
 
 **Anoop Yadav**
 
-B.Sc. Computer Science Student  
+Computer Science Student  
 Full Stack Web Developer
 
----
 
-## 📄 License
 
-This project is licensed under the MIT License.
