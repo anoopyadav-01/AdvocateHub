@@ -1,0 +1,112 @@
+[
+  {
+    "section": "41",
+    "name": "When Police May Arrest Without Warrant",
+    "description": "Lays down circumstances where police can arrest without prior approval from a magistrate."
+  },
+  {
+    "section": "50",
+    "name": "Person Arrested to Be Informed of Grounds of Arrest",
+    "description": "Mandates informing the arrested individual of the reasons for arrest and their rights."
+  },
+  {
+    "section": "54",
+    "name": "Examination of Arrested Person by Medical Officer",
+    "description": "Ensures a medical examination of the arrested person if they claim injuries or maltreatment."
+  },
+  {
+    "section": "57",
+    "name": "Person Arrested Not to Be Detained More Than 24 Hours",
+    "description": "No person can be detained by the police for more than 24 hours without being presented before a magistrate."
+  },
+  {
+    "section": "125",
+    "name": "Order for Maintenance of Wives, Children, and Parents",
+    "description": "Provides a legal remedy for maintenance to wives, children, and parents unable to support themselves."
+  },
+  {
+    "section": "154",
+    "name": "Information in Cognizable Cases",
+    "description": "Details the procedure for filing an FIR (First Information Report) in cognizable offences."
+  },
+  {
+    "section": "156",
+    "name": "Police Officer's Power to Investigate Cognizable Cases",
+    "description": "Grants the police the authority to investigate cognizable cases without prior approval of a magistrate."
+  },
+  {
+    "section": "167",
+    "name": "Procedure When Investigation Cannot Be Completed in 24 Hours",
+    "description": "Allows a magistrate to extend detention during an investigation, subject to specified conditions."
+  },
+  {
+    "section": "190",
+    "name": "Cognizance of Offences by Magistrates",
+    "description": "Describes how magistrates can take cognizance of offences upon receiving a complaint, police report, or other information."
+  },
+  {
+    "section": "197",
+    "name": "Prosecution of Judges and Public Servants",
+    "description": "Requires prior sanction for prosecuting public servants and judges for acts done in their official capacity."
+  },
+  {
+    "section": "200",
+    "name": "Examination of Complainant",
+    "description": "Mandates examination of the complainant on oath when a magistrate takes cognizance of a complaint."
+  },
+  {
+    "section": "202",
+    "name": "Postponement of Issue of Process",
+    "description": "Allows a magistrate to inquire into a case further before issuing a process against the accused."
+  },
+  {
+    "section": "204",
+    "name": "Issue of Process",
+    "description": "Authorizes a magistrate to issue a summons or warrant after taking cognizance of an offence."
+  },
+  {
+    "section": "207",
+    "name": "Supply to the Accused of Copies of Police Report and Other Documents",
+    "description": "Ensures the accused receives copies of relevant documents to prepare their defense."
+  },
+  {
+    "section": "239",
+    "name": "When Accused Shall Be Discharged",
+    "description": "Provides for the discharge of the accused if the magistrate finds no sufficient ground for proceeding."
+  },
+  {
+    "section": "240",
+    "name": "Framing of Charge",
+    "description": "Mandates the framing of charges if sufficient grounds exist to proceed against the accused."
+  },
+  {
+    "section": "244",
+    "name": "Evidence for Prosecution",
+    "description": "Allows the magistrate to record evidence for the prosecution when the accused does not plead guilty."
+  },
+  {
+    "section": "245",
+    "name": "When Accused Shall Be Discharged in Warrant Cases",
+    "description": "Empowers the magistrate to discharge the accused if no case is made out even after recording prosecution evidence."
+  },
+  {
+    "section": "250",
+    "name": "Compensation for Accusation Without Reasonable Cause",
+    "description": "Provides for compensation to the accused if the complaint against them is found to be malicious or without reasonable cause."
+  },
+  {
+    "section": "256",
+    "name": "Non-Appearance or Death of Complainant",
+    "description": "Allows the magistrate to acquit the accused if the complainant does not appear in a summons case."
+  },
+  {
+    "section": "309",
+    "name": "Power to Postpone or Adjourn Proceedings",
+    "description": "Empowers courts to postpone or adjourn proceedings as necessary during trials."
+  },
+  {
+    "section": "313",
+    "name": "Power to Examine the Accused",
+    "description": "Enables the court to question the accused to explain any evidence against them."
+  }
+]

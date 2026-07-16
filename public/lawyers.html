@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyer page</title>
+    <link rel="stylesheet" href="lawyer.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="./All_logos/advocate.png" alt="Logo" />
+      <p class="adv-name"></p>
+      <img
+        id="clientphoto-display"
+        class="profile-photo"
+        src=""
+        alt="Profile"
+        style="display: none"
+      />
+    </div>
+
+    <div class="lawyerinfo" id="lawyer-info">
+      <div>
+        <span>NAME: </span>
+        <span id="lawyername-display"></span>
+        <input type="text" id="lawyername-input" style="display: none" />
+      </div>
+      <div>
+        <span>Email: </span>
+        <span id="lawyeremail-display"></span>
+        <input type="email" id="lawyeremail-input" style="display: none" />
+      </div>
+      <div>
+        <span>Phone: </span>
+        <span id="lawyerphone-display"></span>
+        <input type="text" id="lawyerphone-input" style="display: none" />
+      </div>
+      <div>
+        <span>Experience: </span>
+        <span id="lawyerexperience-display"></span>
+        <input type="text" id="lawyertexperience-input" style="display: none" />
+      </div>
+
+      <div>
+        <span>Practice Area: </span>
+        <span id="lawyerpracticeArea-display"></span>
+        <input
+          type="text"
+          id="lawyerpracticeArea-input"
+          style="display: none"
+        />
+      </div>
+
+      <button onclick="enableEdit()">Update</button>
+      <button id="save-btn" onclick="saveProfile()" style="display: none">
+        Save
+      </button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div class="container">
+      <div class="menu">
+        <button class="btn" onclick="showSection('feedback')">Feedbacks</button>
+        <button class="btn" onclick="showSection('clientrequest')">
+          Client Requests
+        </button>
+        <button class="btn" onclick="showSection('bio')">Inforamtion</button>
+      </div>
+
+      <section id="feedback" class="section active">
+        <h2 class="feedbackh2">All Feedback</h2>
+        <div id="feedbacks"></div>
+      </section>
+
+      <section id="clientrequest" class="section">
+        <h3>This is where all client requests are shown</h3>
+      </section>
+
+      <section id="bio" class="section">
+        <h1>Update your bio and add more information</h1>
+        <span id="lawyerbio-display"></span>
+        <textarea id="lawyerbio-input" style="display: none"></textarea>
+        <button class="btn" onclick="enablebioupate()">Update</button>
+        <button
+          class="btn"
+          id="save-bio"
+          onclick="saveProfile()"
+          style="display: none"
+        >
+          Save Bio
+        </button>
+      </section>
+    </div>
+    <script src="lawyer.js"></script>
+  </body>
+</html>
