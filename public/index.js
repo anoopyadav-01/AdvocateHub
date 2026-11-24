@@ -11,7 +11,6 @@ menuBtn.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-// Close menu when a nav item is clicked
 document.querySelectorAll("nav a, nav button").forEach((item) => {
   item.addEventListener("click", () => {
     if (window.innerWidth <= 768) {
@@ -25,7 +24,6 @@ menuBtn.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-// Mobile dropdowns
 document.querySelectorAll(".dropdown > a").forEach((item) => {
   item.addEventListener("click", function (e) {
     if (window.innerWidth <= 768) {
@@ -46,14 +44,11 @@ function showSection(sectionId) {
 
   const selectedSection = document.getElementById(sectionId);
   selectedSection.classList.add("active");
-
   const navbarHeight = 80;
-
   const y =
     selectedSection.getBoundingClientRect().top +
     window.pageYOffset -
     navbarHeight;
-
   window.scrollTo({
     top: y,
     behavior: "smooth",
@@ -67,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       displayIPC(data);
-
       searchInput.addEventListener("input", (e) => {
         const query = e.target.value.toLowerCase();
         const filteredData = data.filter(
@@ -105,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       displayCRPC(data);
-
       searchInput.addEventListener("input", (e) => {
         const query = e.target.value.toLowerCase();
         const filteredData = data.filter(
