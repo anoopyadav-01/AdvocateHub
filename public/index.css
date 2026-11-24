@@ -41,7 +41,6 @@ nav {
   align-items: center;
 }
 
-/* Logo */
 .logo img {
   margin-top: 10px;
   height: 60px;
@@ -74,7 +73,6 @@ nav ul li > a:hover {
   color: #d4af37;
 }
 
-/* Dropdown */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -417,23 +415,6 @@ nav ul li > a:hover {
   max-width: 240px;
   margin: auto;
 }
-/* Tablet */
-@media (max-width: 1024px) {
-  .dives {
-    gap: 20px;
-  }
-
-  .dives p {
-    font-size: 15px;
-    max-width: 200px;
-  }
-
-  .dives img {
-    width: 70px;
-    height: 70px;
-    padding: 15px;
-  }
-}
 
 @media (max-width: 768px) {
   .dives {
@@ -474,18 +455,15 @@ nav ul li > a:hover {
   .dives {
     gap: 30px;
   }
-
   .dives img {
     width: 55px;
     height: 55px;
     padding: 12px;
   }
-
   .dives p {
     font-size: 14px;
     line-height: 1.6;
   }
-
   .mainseach h1 {
     font-size: 1.6rem;
   }
@@ -501,7 +479,6 @@ nav ul li > a:hover {
   transform: scale(1.1);
 }
 
-/* Text */
 .feature h3 {
   color: white;
 }
@@ -592,13 +569,13 @@ nav ul li > a:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
 }
-/*15*/
+
 .bottom {
   background-color: #1a1a1a;
   color: #f9f9f9;
   padding: 40px 20px;
 }
-/* Tablet */
+
 @media (max-width: 768px) {
   .carousel {
     display: flex;
@@ -613,7 +590,7 @@ nav ul li > a:hover {
   }
 
   .lawyer-card {
-    flex: 0 0 calc(50% - 8px); /* 2 cards visible */
+    flex: 0 0 calc(50% - 8px); 
     min-width: calc(50% - 8px);
     max-width: calc(50% - 8px);
     scroll-snap-align: start;
@@ -889,7 +866,6 @@ h4 {
   border-radius: 11px;
 }
 
-/*ipc css*/
 .header-ipc {
   background: #2c3e50;
   color: #fff;
@@ -952,8 +928,6 @@ h4 {
   padding: 8px;
   border-radius: 11px;
 }
-
-/* css ->about */
 
 #about {
   margin-bottom: 40px;
@@ -1119,12 +1093,11 @@ h4 {
   }
 }
 
-/*contact css*/
 .hero-banner {
-  background-color: #343649; /* Exact Slack Purple */
+  background-color: #343649; 
   color: #ffffff;
   text-align: center;
-  padding: 64px 24px 180px 24px; /* Deep bottom padding to accommodate overlapping card */
+  padding: 64px 24px 180px 24px; 
   position: relative;
 }
 
@@ -1160,10 +1133,9 @@ h4 {
   color: #ffffff;
 }
 
-/* --- Centered Form Card --- */
 .containermkk {
   max-width: 640px;
-  margin: -120px auto 60px auto; /* Pulls the card up into the purple header */
+  margin: -120px auto 60px auto; 
   position: relative;
   padding: 0 20px;
 }
@@ -1175,7 +1147,6 @@ h4 {
   padding: 40px;
 }
 
-/* --- Form Element Framework --- */
 .form-group {
   margin-bottom: 24px;
 }
@@ -1203,11 +1174,10 @@ h4 {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #1264a3; /* Slack blue focus outline */
+  border-color: #1264a3; 
   box-shadow: 0 0 0 3px rgba(18, 100, 163, 0.15);
 }
 
-/* Native Placeholder style matching screenshot */
 ::placeholder {
   color: #b0b0b0;
   opacity: 1;
@@ -1218,9 +1188,8 @@ h4 {
   min-height: 120px;
 }
 
-/* --- CTA Button & Links --- */
 .btn-submit {
-  background-color: #611f69; /* Slightly brighter button purple */
+  background-color: #611f69; 
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -1249,14 +1218,10 @@ h4 {
   text-decoration: underline;
 }
 
-/* term css*/
-
 #termuse {
   min-height: 100vh;
   padding: 120px 20px 60px;
 }
-
-/* Main Card */
 
 .aboutcontainer {
   max-width: 1100px;
