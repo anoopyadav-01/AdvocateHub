@@ -8,11 +8,9 @@ function openModal(event) {
 
   try {
     selectedLawyer = JSON.parse(lawyerData);
-
     document.getElementById("name").value = clientData.name || "";
     document.getElementById("email").value = clientData.email || "";
     document.getElementById("phone").value = clientData.phone || "";
-
     document.getElementById("contactFormModal").style.display = "block";
   } catch (error) {
     console.error("Error parsing lawyer data:", error);
@@ -21,7 +19,6 @@ function openModal(event) {
 
 function closeModal() {
   document.getElementById("contactFormModal").style.display = "none";
-
   if (selectedLawyer) {
     const feedbackButton = document.getElementById(
       `feedback-${selectedLawyer._id}`,
@@ -35,17 +32,14 @@ document
   .getElementById("contactForm")
   .addEventListener("submit", async (event) => {
     event.preventDefault();
-
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const reason = document.getElementById("reason").value;
-
     if (!selectedLawyer) {
       alert("No lawyer selected!");
       return;
     }
-
     const response = await fetch("/api/contact-lawyer", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -57,16 +51,12 @@ document
         lawyerEnrollmentId: selectedLawyer.enrollmentId,
       }),
     });
-
     const result = await response.json();
     alert(result.message);
-
     if (response.ok) {
       closeModal();
     }
   });
-
-//feedback
 
 function openFeedbackModal(lawyerId, enrollmentId) {
   feedbackLawyerId = lawyerId;
@@ -74,7 +64,6 @@ function openFeedbackModal(lawyerId, enrollmentId) {
   document.getElementById("feedbackFormModal").style.display = "block";
 }
 
-// Close Feedback Modal
 function closeFeedbackModal() {
   document.getElementById("feedbackFormModal").style.display = "none";
 }
@@ -82,16 +71,13 @@ document
   .getElementById("feedbackForm")
   .addEventListener("submit", async (event) => {
     event.preventDefault();
-
     const feedback = document.getElementById("feedback").value;
     const clientName = document.getElementById("clientFeedbackName").value;
     const clientPhoto = document.getElementById("clientFeedbackPhoto").value;
-
     if (!feedbackLawyerId) {
       alert("No lawyer selected for feedback!");
       return;
     }
-
     try {
       const response = await fetch("/api/submit-feedback", {
         method: "POST",
@@ -118,7 +104,6 @@ document
     }
   });
 
-//fetch lawyer and filter
 
 let filters = {
   state: "",
@@ -129,12 +114,10 @@ let filters = {
 };
 
 const MAX_BIO_LENGTH = 100;
-
 async function fetchAndDisplayAdvocates() {
   try {
     const response = await fetch("/api/lawyer");
     const advocates = await response.json();
-
     const filteredAdvocates = advocates.filter((advocate) => {
       return (
         (!filters.state || advocate.state === filters.state) &&
@@ -262,11 +245,9 @@ function fetchclientdata() {
       document.getElementById("clientname-input").value = data.name || "";
       document.getElementById("clientemail-input").value = data.email || "";
       document.getElementById("clientphone-input").value = data.phone || "";
-
       document.getElementById("clientFeedbackName").value = data.name || "";
       document.getElementById("clientFeedbackPhoto").value = data.photo || "";
 
-      // Fixing the photo setting issue
       let photoElement = document.getElementById("clientphoto-display");
       if (photoElement && data.photo) {
         photoElement.src = data.photo;
@@ -276,7 +257,6 @@ function fetchclientdata() {
     .catch((error) => console.error("Error fetching client data:", error));
 }
 
-//upadte client detail
 function enableEdit() {
   document.getElementById("clientname-display").style.display = "none";
   document.getElementById("clientname-input").style.display = "inline";
